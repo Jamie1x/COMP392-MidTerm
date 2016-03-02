@@ -60,6 +60,7 @@ var game = (() => {
         scene.add(axis);
 
         /* ENTER CODE HERE */
+        //CODE
         
         //add cube1
         var geometry = new CubeGeometry(10, 1, 10);
@@ -104,7 +105,7 @@ var game = (() => {
         scene.add(plane);
         
         //add ambient light
-        var ambientLight = new AmbientLight(0x0f0f0f);
+        var ambientLight = new AmbientLight(0x444444);
         scene.add(ambientLight);
         
         //add spotlight
@@ -163,7 +164,7 @@ var game = (() => {
         // render using requestAnimationFrame
         requestAnimationFrame(gameLoop);
         
-        //
+        //set rotation speed of objects
         cube1.rotation.y += control.cube1 / 1000;
         cube2.rotation.y += control.cube2 / 1000;
         cube3.rotation.y += control.cube3 / 1000;

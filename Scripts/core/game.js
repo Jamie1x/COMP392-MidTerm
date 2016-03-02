@@ -50,6 +50,7 @@ var game = (function () {
         var axis = new AxisHelper(30);
         scene.add(axis);
         /* ENTER CODE HERE */
+        //CODE
         //add cube1
         var geometry = new CubeGeometry(10, 1, 10);
         var material = new LambertMaterial({ color: Math.random() * 0xffffff });
@@ -87,7 +88,7 @@ var game = (function () {
         plane.rotation.x = -0.5 * Math.PI;
         scene.add(plane);
         //add ambient light
-        var ambientLight = new AmbientLight(0x0f0f0f);
+        var ambientLight = new AmbientLight(0x444444);
         scene.add(ambientLight);
         //add spotlight
         var spotlight = new SpotLight(0xffffff, 2);
@@ -135,7 +136,7 @@ var game = (function () {
         stats.update();
         // render using requestAnimationFrame
         requestAnimationFrame(gameLoop);
-        //
+        //set rotation speed of objects
         cube1.rotation.y += control.cube1 / 1000;
         cube2.rotation.y += control.cube2 / 1000;
         cube3.rotation.y += control.cube3 / 1000;
